@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="index.css" />
+        <script src='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js'></script>
+        <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet' />
+        <title>SpaceX</title>
+    </head>
+    <body>
+        <div style="font-size: 32px; margin: 2rem">Welkom terug!</div>
+        <div class='parent graph'>
+            <div id='map' style='margin: 4px'></div>
+            <script>
+                mapboxgl.accessToken = 'pk.eyJ1Ijoic2VyYXBoaW5hIiwiYSI6ImNrOTl4NmV2aTBicXUzZ21vbTBiaGxwbzcifQ.JaKeQJrxm0_vqAD2xzlV8g';
+                var map = new mapboxgl.Map({
+                container: 'map',
+                center: [-0.118092, 51.509865],
+                style: 'mapbox://styles/mapbox/streets-v11'
+                });
+            </script>
+            <img style='margin: 4px' src='https://tile.openweathermap.org/map/temp_new/0/0/0.png?appid=cfdb302027d8c6089ca7ad9e15f89a1c'>
+        
+        </div> 
+                
+           
+       
+
+    </body>
